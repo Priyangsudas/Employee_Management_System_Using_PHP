@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="Admin_login.css">
+    <script>
+        function valid()
+        {
+            var a=document.f1.txt1.value;
+            var b=document.f1.txt2.value;
+            if (a=="")
+            {
+                alert("Please Enter Employee ID");
+                return false;
+            }
+            else if (b=="")
+            {
+                alert("Please Enter Password");
+                return false;
+            }
+            else if (b.length != 6)
+            {
+                alert("Please Enter a Valid Password");
+                return false;
+            }  
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="container_one">
+            <div id="left">
+                <div id="left_up">
+                    <p id="p1">Nice to see you again</p>
+                    <p id="p2">WELCOME BACK</p>
+                </div>
+                <div id="left_down">
+                    <p id="p3">Employee management is the process by which employers ensure workers perform their jobs to the best of their abilities so as to achieve business goals. It typically entails building and maintaining healthy relationships with employees, as well as monitoring their daily labor and measuring progress.</p>
+                </div>
+            </div>
+            <div id="right">
+                <p id="p4">Login Account</p>
+                <div id="right_up">
+                    <p id="p5">Logging in is usually used to enter a specific page, website or application, which trespassers cannot see. Once the user is logged in, the login token may be used to track what actions the user has taken while connected to the site.</p>
+                    <div id="right_down">
+
+                        <form name="f1" action ="Admin_login.php" method="post"> 
+
+                        <input type="text" name="text1" id="txt1" placeholder="Email ID">
+                        <input type="text" name="text2" id="txt2" placeholder="Password">
+                        <input type="checkbox" name="checkbox1" id="c1"><p id="p6">Keep me signed in</p>
+                        <p id="p7">Already a member?</p>
+                        <input type="submit" name="button1" id="btn1" value="SUBSCRIBE" onclick="return valid()">
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
