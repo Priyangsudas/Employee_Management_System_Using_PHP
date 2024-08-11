@@ -49,6 +49,7 @@
                     <p id="p1">Master Admin</p>
                 </div>
                 <div id="right_up">
+                <h4  style="text-align:right"> <a href="admin_logout.php">Logout </a></h3>
                 </div>
             </div>
             <div id="down">
